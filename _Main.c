@@ -23,6 +23,8 @@ int main(int argc, char *argv[])
 	while (getline(&line_buf, &sizeBuffer, filedesc) != EOF)
 	{
 		operation = strtok(line_buf, " \r\n\t");
+		if (operation == NULL)
+			continue;
 		fun_operators(operation, &top, Nlinea);
 		operation2 = strtok(NULL, " \r\n\t");
 		if ((strcmp(operation, "push") == 0))
