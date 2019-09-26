@@ -41,7 +41,7 @@ void funErrorNoOPCODE(int numline, char *text, char *opcode)
 */
 void funErrorGenericINT(int numLine, char *text)
 {
-	fprintf(stderr, "L%u:  %s\n", numLine, text);
+	fprintf(stderr, "L%u: %s\n", numLine, text);
 	exit(EXIT_FAILURE);
 }
 
