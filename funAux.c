@@ -10,16 +10,12 @@ int is_number(char *operation2)
 
 	while (operation2[k] != '\0')
 	{
-		if (isdigit(operation2[k]) != 0)
+		if (isdigit(operation2[k]) == 0 && operation2[k] != 45)
 		{
-			return (1);
-		}
-		if (isdigit(operation2[k]) == -isdigit(operation2[k]))
-		{
-			return (1);
+			return (-1);
 		}
 		k++;
 	}
-	return (-1);
+	return (1);
 }
 
