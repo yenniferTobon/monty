@@ -18,6 +18,7 @@ int fun_operators(char *operation, stack_t **top, int Nlinea)
 		{"pint", _pint},
 		{"pop", _pop},
 		{"swap", _swap},
+		{"add", _add},
 		{NULL, NULL},
 	};
 	while (f_ope[i].opcode != NULL)
