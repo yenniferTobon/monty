@@ -15,6 +15,7 @@ int fun_operators(char *operation, stack_t **top, int Nlinea)
 	instruction_t f_ope[] = {
 		{"push", _push},
 		{"pall", _pall},
+		{"pint", _pint},
 		{NULL, NULL},
 	};
 	while (f_ope[i].opcode != NULL)
