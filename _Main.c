@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		}
 		Nlinea += 1;
 	}
-	//fclose(filedesc);
+	fclose(filedesc);
 	//free_stack(top);
 	return (0);
 }
