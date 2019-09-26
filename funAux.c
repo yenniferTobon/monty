@@ -51,8 +51,7 @@ void _pint(stack_t **stack, unsigned int line_number)
 
 	if (!current)
 	{
-		printf("error mesage");
-		exit(EXIT_FAILURE);
+		funErrorGenericINT(line_number, "can't pint, stack empty");
 	}
 	printf("%d\n", current->n);
 }
