@@ -84,7 +84,7 @@ void _pop(stack_t **stack, unsigned int line_number)
 */
 void _swap(stack_t **stack, unsigned int line_number)
 {
-	stact_t *node1, node2;
+	stack_t *node1, *node2;
 	int n;
 
 	if (!(*stack) || !(*stack)->next)
