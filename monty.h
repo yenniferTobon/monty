@@ -44,5 +44,4 @@ void funErrorGenericCHAR(char *text, char *nomFile);
 void funErrorNoOPCODE(int numline, char *text, char *opcode);
 void funErrorGenericINT(int numLine, char *text);
 int is_number(char *operation2);
-void free_stack(stack_t *stack);
 #endif
