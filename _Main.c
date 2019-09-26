@@ -41,6 +41,6 @@ int main(int argc, char *argv[])
 		Nlinea += 1;
 	}
 	fclose(filedesc);
-	free_stack(top);
+	//free_stack(top);
 	return (0);
 }
