@@ -27,7 +27,7 @@ int fun_operators(char *operation, stack_t **top, int Nlinea)
 		i++;
 	}
 	if (flag != 1)
-	funErrorNoOPCODE(Nlinea, "unknown instruction", operation);
+		funErrorNoOPCODE(Nlinea, "unknown instruction", operation);
 	return (0);
 }
 
