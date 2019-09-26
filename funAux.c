@@ -55,3 +55,23 @@ void _pint(stack_t **stack, unsigned int line_number)
 	}
 	printf("%d\n", current->n);
 }
+
+/**
+* _pop - Prints the value at the top of the stack
+* @stack: Linked list
+* @line_number: Int value
+* Return: Void
+*/
+void _pop(stack_t **stack, unsigned int line_number)
+{
+	stack_t *h = *stack;
+
+	if (!h)
+	{
+		funErrorGenericINT(line_number, "can't pop an empty stack");
+
+	}
+	h = (*stack)->next;
+	free(*stack);
+	*stack = h;
+}

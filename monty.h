@@ -46,4 +46,5 @@ void funErrorGenericINT(int numLine, char *text);
 int is_number(char *operation2);
 void free_stack(stack_t *stack);
 void _pint(stack_t **stack, unsigned int line_number);
+void _pop(stack_t **stack, unsigned int line_number);
 #endif
