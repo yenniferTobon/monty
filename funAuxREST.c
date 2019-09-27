@@ -63,8 +63,7 @@ void _div(stack_t **stack, unsigned int line_number)
 
 	if (!(*stack) || !(*stack)->next)
 	{
-		printf("L%d: can't div, stack too short", line_number);
-		exit(EXIT_FAILURE);
+		funErrorGenericINT(line_number, "can't div, stack too short");
 	}
 	node1 = (*stack);
 	node2 = node1->next;
