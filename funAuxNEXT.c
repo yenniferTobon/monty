@@ -11,7 +11,7 @@ void _mod(stack_t **stack, unsigned int line_number)
 
 	if (!(*stack) || !(*stack)->next)
 	{
-		funErrorGenericINT(line_number, "can't mul, stack too short");
+		funErrorGenericINT(line_number, "can't mod, stack too short");
 	}
 	node1 = (*stack);
 	node2 = node1->next;
