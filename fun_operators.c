@@ -22,6 +22,8 @@ int fun_operators(char *operation, stack_t **top, int Nlinea)
 		{"nop", _nop},
 		{"sub", _sub},
 		{"div", _div},
+		{"mul", _mul},
+		{"mod", _mod},
 		{NULL, NULL},
 	};
 	while (f_ope[i].opcode != NULL)
