@@ -47,7 +47,7 @@ void _sub(stack_t **stack, unsigned int line_number)
 	}
 	node1 = (*stack);
 	node2 = node1->next;
-	node2->n = node2-> - node1->n;
+	node2->n = node2->n - node1->n;
 	_pop(stack, line_number);
 }
 
